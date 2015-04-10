@@ -1,0 +1,293 @@
+/*
+Theme Name:   Divi Child
+Theme URI:    http://rexydesign.com/
+Description:  Divi Child Theme
+Author:       Chris Luke
+Author URI:   http://rexydesign.com/
+Template:     Divi
+Version:      1.0.0
+*/
+
+@import url('../Divi/style.css');
+
+/******************************GLOBAL******************************/
+/******************************GLOBAL******************************/
+/******************************GLOBAL******************************/
+
+/* increases size of slider text and adds background color and increases drop shadow and -margin top */
+.et_pb_slide_description h2 {
+	font-size: 65px;
+	text-shadow: 0 2px 5px #000 !important;
+}
+
+@media only screen and ( min-width: 720px ){
+	.et_pb_slide_description h2 {margin-top:-100px;}
+}
+
+et_pb_slide_description h2, .et_pb_slide_content{
+	text-shadow: 0 2px 5px #000 !important;
+}
+
+.ctatext h2{
+	font-size: 40px;
+}
+
+/* DISABLED increase slide of slider button
+a.et_pb_more_button {
+	font-size: 50px;
+}
+
+a.et_pb_more_button:after {
+	top: 30px !important;
+}
+*/
+
+/* make background color to slider CTA */
+a.et_pb_more_button {
+	background-color: rgba(186, 218, 85, .5);
+}
+
+/* increase side of CTA button and text */
+a.et_pb_promo_button {
+	font-size: 40px;
+}
+
+a.et_pb_promo_button:after {
+	top: 20px !important;
+}
+
+/* disable top padding for primary menu (used when logo is removed), also removes logo */
+
+header#main-header {
+	padding: 0;
+}
+
+#main-header #logo {
+	display: none;
+}
+
+/* increase size of top nav font */
+.et_header_style_centered #top-menu > li > a {
+	font-size: 18px;
+}
+
+/******************************HOME******************************/
+/******************************HOME******************************/
+/******************************HOME******************************/
+
+/* disable fullwdith portfolio hyperlinking */
+	.et_pb_portfolio_image a{
+	pointer-events: none;
+}
+
+.et_pb_fullwidth_portfolio .et_pb_portfolio_image:hover .et_overlay {
+	opacity: 0 !important;
+}
+
+/* decrease height of slider */
+@media only screen and ( min-width: 720px ){
+	.home .et_pb_slider .et_pb_slide {
+	height: 500px;
+}
+}
+
+/*home page divider height*/
+.dividerheight {
+	padding-top: 1px;
+}
+
+/* blurb styling on home page (#blurb1 is blurbs 1-3, #blurb4 is blurb 4)*/
+
+div#blurb1 {
+	color: #666666 !important;
+	background-color: rgba(0, 0, 0, .1);
+	padding-top: 25px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	margin-right:-55px;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	line-height: 1.7em;
+	border: 2px solid;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+div#blurb1:hover {
+	padding-top: 25px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	margin-right:-55px;
+	color: #f7f7f7 !important;
+	background-color: rgba(0, 0, 0, .7); 
+	border-color:#666666; 
+}
+
+div#blurb1 h4 a {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+div#blurb1 .et_pb_text {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+div#blurb1:hover h4 a {
+	color: #f7f7f7 !important;
+}
+
+div#blurb4 {
+	color: #666666 !important;
+	background-color: rgba(186, 218, 85, .5);
+	padding-top: 25px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	margin-right:-55px;
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	line-height: 1.7em;
+	border: 2px solid;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+div#blurb4:hover {
+	padding-top: 25px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	margin-right:-55px;
+	color: #f7f7f7 !important;
+	background-color: rgba(186, 218, 85, .9); 
+	border-color:#666666; 
+}
+
+div#blurb4 h4 a {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+div#blurb4 .et_pb_text {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+div#blurb4:hover h4 a {
+	color: #f7f7f7 !important;
+}
+
+/******************************WHAT TO EXPECT******************************/
+/******************************WHAT TO EXPECT******************************/
+/******************************WHAT TO EXPECT******************************/
+
+/* blurb styling for download forms */
+
+div#blurb2 {
+	padding-top: 25px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	color: #666666 !important;
+	background-color: rgba(0, 0, 0, .1);
+	cursor: pointer;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	line-height: 1.7em;
+	border: 2px solid;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+div#blurb2:hover {
+	color: #bada55 !important;
+	background-color: rgba(255, 255, 255, .1); 
+	border-color:#666666; 
+}
+
+
+
+/******************************TESTIMONIALS******************************/
+/******************************TESTIMONIALS******************************/
+/******************************TESTIMONIALS******************************/
+
+/*align youtube icon on testimonials page to the right*/
+img#youtuberight {
+	float: right;
+}
+
+/******************************CONTACT US******************************/
+/******************************CONTACT US******************************/
+/******************************CONTACT US******************************/
+
+/*contact form 7 styling*/
+.wpcf7-text, .wpcf7-textarea, .wpcf7-captchar, .wpcf7-select, .wpcf7-date {
+	background-color: #f7f7f7 !important;
+	border: none !important;
+	width: 100% !important;
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;
+	font-size: 14px;
+	color: #999 !important;
+	padding: 16px !important;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.wpcf7-submit {
+	color: #666666 !important;
+	background-color: #f7f7f7 !important;
+	margin: 8px auto 0;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 500;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 6px 20px;
+	line-height: 1.7em;
+	border: 2px solid;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.wpcf7-submit:hover { 
+	color: #bada55 !important;
+	background-color: #666666 !important; 
+	border-color:#eee; 
+	padding: 6px 20px !important; 
+}
